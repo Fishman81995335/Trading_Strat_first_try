@@ -15,7 +15,7 @@ def settings():
     return [exchange, markets, date_start, date_end, lookback]
 
 def trading_strategy(lookback_data):
-    print("entering trading_strat")
+    
 
     order = pd.DataFrame(0, index=lookback_data['POSITION'].columns, columns = ['SIGNAL','WEIGHTS','PRICE'])
 
