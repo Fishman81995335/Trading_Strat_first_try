@@ -5,7 +5,7 @@ from auquanToolbox.toolbox import backtest
 
 def settings():
     exchange = "nasdaq"           # Exchange to download data for (only nasdaq for now)
-    markets = ['AAPL','IBM','GOOG','C'] # Stocks to download data for. 
+    markets = ['AAPL'] # Stocks to download data for. 
     date_start = '2015-01-03'   # Date to start the backtest
     date_end = '2016-11-06'     # Date to end the backtest
     lookback = 120               # Number of days you want historical data for

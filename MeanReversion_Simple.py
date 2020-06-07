@@ -5,7 +5,7 @@ from auquanToolbox.toolbox import backtest
 
 def settings():
     exchange = "nasdaq"           # Exchange to download data for (only nasdaq for now)
-    markets = ['AAPL','NFLX','GOOG','IBM','AMZN']            # Stocks to download data for. 
+    markets = ['AAPL','NFLX','GOOG','C','AMZN','MSFT','TSLA']            # Stocks to download data for. 
     date_start = '2014-06-30'   # Date to start the backtest
     date_end = '2016-11-06'     # Date to end the backtest
     lookback = 120               # Number of days you want historical data for
@@ -15,7 +15,10 @@ def settings():
     return [exchange, markets, date_start, date_end, lookback]
 
 def trading_strategy(lookback_data):
+<<<<<<< HEAD
+=======
     
+>>>>>>> 01215d74b02f24c2c29f7f432f5af3734b24e345
 
     order = pd.DataFrame(0, index=lookback_data['POSITION'].columns, columns = ['SIGNAL','WEIGHTS','PRICE'])
 
