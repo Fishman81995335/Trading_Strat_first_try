@@ -22,8 +22,8 @@ class MyTradingParams(TradingSystemParameters):
         super(MyTradingParams, self).__init__()
         self.count = 0 
         self.params = {}
-        self.start = '2019/01/01'
-        self.end = '2019/06/30'
+        self.start = '2020/01/01'
+        self.end = '2020/05/30'
         self.instrumentIds = ['TSLA']
 
     '''
@@ -31,7 +31,9 @@ class MyTradingParams(TradingSystemParameters):
     '''
 
     def getDataParser(self):
-
+        instrumentIds = ['TSLA']
+        startDateStr = '2020/01/01'
+        endDateStr = '2020/05/30'
         return YahooStockDataSource(cachedFolderName='yahooData/',
                                     dataSetId='AuquanTrainingTest',
                                     instrumentIds=self.instrumentIds,
